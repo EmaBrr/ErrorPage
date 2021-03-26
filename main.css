@@ -1,4 +1,6 @@
-body {
+.wrapper {
+  width: 100%;
+  height: 100vh;
   background: rgb(250, 250, 250);
   background: linear-gradient(
     90deg,
@@ -10,73 +12,81 @@ body {
 }
 
 .box {
-    display: inline-block; 
-    width: 1200px;
-    height: 700px;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 30px;
-    background-color: white;
-    margin-left: calc(50% - 600px);
-    margin-top: calc(22vh - 100px);   
-    box-shadow: 0px 8px 8px 0px rgba(104, 100, 100, 0.4); 
+  display: inline-block;
+  width: 80%;
+  height: 70%;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 30px;
+  background-color: white;
+  margin-left: 10%;
+  margin-top: 8%;
+  box-shadow: 0px 8px 8px 0px rgba(104, 100, 100, 0.4);
+  position: absolute;
 }
 
 .part1 {
-    width: 38%;
-    height: 100%;
-    float: left;
+  display: table;
+  width: 35%;
+  height: 100%;
+  float: left;
 }
 
 .part2 {
-    width: 62%;
-    height: 100%;
-    float: left;
+  display: inline-block;
+  width: 65%;
+  height: 100%;
+  position: relative;
+  /* text-align: center; */
 }
 
-.text1 {
-    width: 450px;
-    height: 360px;
-    text-align: center;
-    padding: 265px 0px 0px 0px;
-    font-size: 90px;
-    color: #2b3c66;
-    font-weight: bold;
+h1 {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  padding: 48% 0% 0% 0%;
+  font-size: 8vmin;
+  color: #2b3c66;
+  margin-bottom: 0.1vw;
+  /* font-weight: bold; */
 }
 
-.text2 {
-    width: 450px;
-    height: 50px;
-    text-align: center;
-    font-size: 28px;
-    color: #2b3c66
+h2 {
+  width: 100%;
+  height: 8%;
+  text-align: center;
+  font-size: 2.4vmin;
+  color: #2b3c66;
 }
 
 .btn {
-    padding: 10px;
-    width: 450px;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 button {
-    height: 36px;
-    width: 160px;
-    text-align: center;
-    border-radius: 13px;
-    color: white;
-    background-color: #08215c;
-    font-size: 18px;
+  height: auto;
+  width: 30%;
+  text-align: center;
+  border-radius: 13px;
+  color: white;
+  background-color: #08215c;
+  font-size: 2vmin;
+  padding: 2%;
 }
 
 .font {
-    font-family: 'Oxygen', sans-serif;
-}
-
-.image {
-    padding: 40px 0px 0px 0px;
+  font-family: "Oxygen", sans-serif;
 }
 
 img {
-    display: block;
-    width: 740px;
-    height: auto;
+    height: 90%;
+    max-height: 90%;
+    width: auto;
+    max-width: 90%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
