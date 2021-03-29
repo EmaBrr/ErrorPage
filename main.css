@@ -7,18 +7,23 @@
 .wrapper {
   width: 100%;
   height: 100vh;
+  background: var(--darkBlue);
+  transition: background 4s ease;
+}
+
+.wrapper:hover {
   background: var(--white);
   background: linear-gradient(
     90deg,
     var(--white) 6%,
     rgba(79, 98, 143, 1) 59%,
     var(--blue) 77%,
-    var(--darkBlue) 100%);
-  transition: 2s;
+    var(--darkBlue) 100%
+  );
 }
 
 .wrapper .box {
-  display: inline-block; 
+  display: inline-block;
   width: 70%;
   height: 75%;
   border: 1px solid var(--white);
