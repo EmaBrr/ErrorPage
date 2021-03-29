@@ -1,93 +1,89 @@
+:root {
+  --darkBlue: rgba(8, 33, 92, 1);
+  --blue: rgba(44, 67, 121, 1);
+  --white: #fff;
+}
+
 .wrapper {
   width: 100%;
   height: 100vh;
-  background: rgb(250, 250, 250);
+  background: var(--white);
   background: linear-gradient(
     90deg,
-    rgba(250, 250, 250, 1) 6%,
+    var(--white) 6%,
     rgba(79, 98, 143, 1) 59%,
-    rgba(44, 67, 121, 1) 77%,
-    rgba(8, 33, 92, 1) 100%
-  );
+    var(--blue) 77%,
+    var(--darkBlue) 100%);
+  transition: 2s;
 }
 
-.box {
-  display: inline-block;
-  width: 80%;
-  height: 70%;
-  border: 1px solid rgb(255, 255, 255);
+.wrapper .box {
+  display: inline-block; 
+  width: 70%;
+  height: 75%;
+  border: 1px solid var(--white);
   border-radius: 30px;
-  background-color: white;
-  margin-left: 10%;
-  margin-top: 8%;
-  box-shadow: 0px 8px 8px 0px rgba(104, 100, 100, 0.4);
-  /* position: absolute; */
+  background-color: var(--white);
+  margin-left: 15%;
+  margin-top: 6%;
+  box-shadow: 0px 7px 7px 0px rgba(104, 100, 100, 0.4);
 }
 
-.part1 {
-  display: table;
+.wrapper .box .box__elem1 {
   width: 35%;
   height: 100%;
   float: left;
 }
 
-.part2 {
-  display: inline-block;
-  width: 65%;
+.wrapper .box .box__elem2 {
+  margin-left: 40%;
+  width: 55%;
   height: 100%;
   position: relative;
-  /* text-align: center; */
+  background: url(./ErrorPicture.PNG);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 h1 {
   width: 100%;
-  height: 50%;
   text-align: center;
-  padding: 48% 0% 0% 0%;
+  padding: 60% 0% 0% 0%;
   font-size: 8vmin;
-  color: #2b3c66;
-  margin-bottom: 0.1vw;
-  /* font-weight: bold; */
+  color: var(--darkBlue);
+  position: inherit;
 }
 
 h2 {
   width: 100%;
-  height: 8%;
+  height: 7%;
   text-align: center;
+  padding: 1% 0% 0% 0%;
   font-size: 2.4vmin;
-  color: #2b3c66;
+  color: var(--darkBlue);
 }
 
 .btn {
   width: 100%;
   text-align: center;
+  opacity: 0.6;
+}
+
+.btn:hover {
+  opacity: 1;
 }
 
 button {
-  height: auto;
-  width: 30%;
-  text-align: center;
+  width: 45%;
+  height: 15%;
   border-radius: 13px;
-  color: white;
-  background-color: #08215c;
-  font-size: 2vmin;
+  color: var(--white);
+  background-color: var(--darkBlue);
+  font-size: 1.5vmin;
   padding: 2%;
 }
 
 .font {
   font-family: "Oxygen", sans-serif;
-}
-
-img {
-    height: auto;
-    min-height: 90%;
-    max-height: 90%;
-    width: auto;
-    max-width: 90%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
 }
