@@ -1,0 +1,101 @@
+@import 'reset';
+// @import './ErrorPicture.PNG';
+
+$colorDarkBlue: rgba(8, 33, 92, 1);
+$colorLightBlue: rgba(44, 67, 121, 1);
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    background: $colorDarkBlue;
+
+        &:hover{
+            background: white;
+            background: linear-gradient(
+              90deg,
+              white 6%,
+              rgba(79, 98, 143, 1) 59%,
+              $colorLightBlue 77%,
+              $colorDarkBlue 100%
+            );
+        }
+        .main__box {
+            display: inline-block;
+            width: 70%;
+            height: 75%;
+            border: 1px solid white;
+            border-radius: 30px;
+            background-color:white;
+            margin-left: 15%;
+            margin-top: 6%;
+            box-shadow: 0px 7px 7px 0px rgba(104, 100, 100, 0.4);
+
+            .left__box{
+                width: 35%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                float: left;
+
+                .left__wrap {
+                    
+                    .btn {
+                        width: 100%;
+                        text-align: center;
+                        opacity: 0.6;
+
+                            &:hover{
+                                opacity: 1;
+                            }
+                      }
+                }
+            }   
+
+            .right__box {
+                margin-left: 40%;
+                width: 55%;
+                height: 100%;
+                position: relative;
+                background-image: url('~/ErrorPicture.PNG');
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }   
+        }
+}
+
+h1 {
+    display: inline-block;
+    color: $colorDarkBlue;
+    width: 100%;
+    text-align: center;
+    font-size: 8vmin;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    display: inline-block;
+    color: $colorDarkBlue;
+    width: 100%;
+    text-align: center;
+    font-size: 2.4vmin;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button {
+    width: 45%;
+    height: 15%;
+    padding: 2%;
+    background-color: $colorDarkBlue;
+    margin-top: 2%;
+    color: white;
+    border-radius: 10px;
+}
+
+.font {
+    font-family: "Oxygen", sans-serif;
+  }
