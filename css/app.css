@@ -190,6 +190,12 @@ button {
   font-size: 1.4vmin;
 }
 
+@media (max-width: 800px) {
+  button {
+    width: 30%;
+  }
+}
+
 .font {
   font-family: "Oxygen", sans-serif;
 }
