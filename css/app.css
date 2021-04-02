@@ -117,6 +117,17 @@ h6 {
   float: left;
 }
 
+@media (max-width: 800px) {
+  .wrapper .main__box .left__box {
+    width: 100%;
+    height: 40%;
+  }
+}
+
+.wrapper .main__box .left__box .left__wrap {
+  width: 100%;
+}
+
 .wrapper .main__box .left__box .left__wrap .btn {
   width: 100%;
   text-align: center;
@@ -132,10 +143,19 @@ h6 {
   width: 55%;
   height: 100%;
   position: relative;
-  background-image: url("~/ErrorPicture.PNG");
+  background-image: url(../Space.PNG);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+@media (max-width: 800px) {
+  .wrapper .main__box .right__box {
+    width: 100%;
+    height: 60%;
+    margin-left: 0%;
+    margin-top: 200px;
+  }
 }
 
 h1 {
@@ -167,6 +187,7 @@ button {
   margin-top: 2%;
   color: white;
   border-radius: 10px;
+  font-size: 1.4vmin;
 }
 
 .font {
